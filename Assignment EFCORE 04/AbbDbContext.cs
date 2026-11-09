@@ -24,7 +24,7 @@ namespace Assignment_EFCORE_04
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Configure Composite Primry Key For CustomerAccount (Many To Many )
+            ////Configure Composite Primry Key For CustomerAccount (Many To Many )
             modelBuilder.Entity<customerAccount>()
             .HasKey(ca => new { ca.CustomerId, ca.AccountNumber });
             modelBuilder.Entity<customerAccount>()
